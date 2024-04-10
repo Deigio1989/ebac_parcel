@@ -1,0 +1,35 @@
+@use '../variaveis';
+
+.button{
+    padding: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    
+    &:hover{
+        transform: scale(1.025);
+        opacity: 90%;
+    }
+
+    &--primary{
+        color:variaveis.$textColor1 ;
+        background-color: variaveis.$textColor3;
+        border: 2px solid variaveis.$textColor3;
+        border-radius: 4px;
+    }
+
+
+    @media (max-width:640px){
+    display: block;
+    width: 100%;
+    }
+
+    @media (max-width:1024px){
+        display: flex;
+        align-items: center;
+        
+        }
+
+}

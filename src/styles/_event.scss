@@ -1,0 +1,65 @@
+@use 'variaveis';
+
+.event{
+    padding: 40px 0 ;
+
+    &--first{
+        padding-top: 72;
+        background-image: linear-gradient(variaveis.$color1,variaveis.$color2);
+    }
+    
+    &--second{
+        background-image: linear-gradient(variaveis.$color2,variaveis.$color3);
+    }
+
+    &--third{
+        padding-bottom: 100px;
+        background-image: linear-gradient(variaveis.$color3,variaveis.$color4);
+    }
+
+
+    &--image-left{
+        .container{
+            flex-direction: row-reverse;
+        }
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    &__image{
+        max-width: 400px;
+        border-radius: 200px;
+    }
+
+    &__details{
+
+        &__title{
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        &__description{
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+
+    @media (max-width:640px){
+        .container{
+            display: block;
+        }
+
+        &__image{
+            width: 100%;
+        }
+
+        &__details{
+            margin-bottom: 16px;
+        }
+    }
+}
