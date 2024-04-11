@@ -28,6 +28,10 @@
     &__text{
         margin: 64px 0;
         font-size: 32px;
+        line-height: 140%;
+        .contador{
+            font-weight: 700;
+        }
         
     }
     &__title{
